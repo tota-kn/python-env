@@ -1,6 +1,7 @@
 import pendulum
 
 TIME_ZONE: str = "Asia/Tokyo"
+DATE_CHANGE_HOUR: int = 3
 
 
 def use_pendulum() -> None:
@@ -60,6 +61,14 @@ def use_pendulum() -> None:
     print(period)
     print(now.add(days=-1), now.add(days=-1) in period)
     print(now.add(days=2), now.add(days=2) in period)
+
+
+def convert_date(datetime, change_date_hour):
+    return (
+        datetime.date()
+        if datetime.hour >= change_date_hour
+        else datetime.add(days=-1).date()
+    )
 
 
 use_pendulum()
