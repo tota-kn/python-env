@@ -1,5 +1,5 @@
-import sample
+def main() -> None:
+    print("test")
 
 
-def main():
-    sample.print_function("test")
+main()
