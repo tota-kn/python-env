@@ -18,11 +18,6 @@
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
     "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
-    "python.linting.mypyEnabled": false,
-    "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
-    "python.linting.mypyArgs": [
-      "--config-file", "mypy.ini"
-    ],
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": true,
@@ -32,4 +27,6 @@
       "tests"
     ],
     "autoDocstring.docstringFormat": "google",
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.typeCheckingMode": "strict",
   }
