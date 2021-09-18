@@ -3,9 +3,15 @@ poetry
 
 # formatter
 black
+デフォルト設定を利用する
 
 # linter
-black
+pylint
+blackとの競合をpyproject.tomlの設定で解消
+
+# organize imports
+isort
+blackとの競合をpyproject.tomlの設定で解消
 
 # type check
 pylance (VSCode Extention)
@@ -13,6 +19,11 @@ pylance (VSCode Extention)
 # test
 pytest
 
-# VSCode Extention
+# IDE
+VSCodeを利用する
+## Settings
+.vscode/settings.json に記載
+
+## Extention
 - python 
 - pylance
